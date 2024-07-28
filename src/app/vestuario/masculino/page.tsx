@@ -1,7 +1,7 @@
 export default function Home() {
 	return (
 		<>
-			<h2>Hello world</h2>
+			<h2>Masculine Section</h2>
 		</>
 	);
 }
