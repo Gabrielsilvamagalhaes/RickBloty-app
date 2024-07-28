@@ -1,9 +1,7 @@
 import type { Metadata } from 'next';
-import { Poppins } from 'next/font/google';
 import StyledComponentsRegistry from './lib/registry';
+import { poppins } from './ui/fonts/fonts';
 import { GlobalStyled } from './ui/styles/Globals';
-
-const poppins = Poppins({ weight: '600', subsets: ['latin'] });
 
 export const metadata: Metadata = {
 	title: 'Rick Bloty',
