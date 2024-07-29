@@ -5,5 +5,5 @@ export type characterData = {
 	species: string;
 	gender: string;
 	image: string;
-	episode: string[];
+	episode?: string[];
 };
