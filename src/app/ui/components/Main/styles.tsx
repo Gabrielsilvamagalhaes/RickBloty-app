@@ -6,8 +6,7 @@ export const Container = styled.main`
   max-width: 96rem;
   margin: 1.5rem auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: minmax(100px, 220px);
+  grid-template-columns: repeat(auto-fill, minmax(280px, 300px));
   justify-content: space-evenly;
-  row-gap: 2rem;
+  gap: 2rem;
 `;

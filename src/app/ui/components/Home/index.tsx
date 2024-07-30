@@ -1,23 +1,27 @@
 import { characterData } from '@/app/lib/types/character';
 import Image from 'next/image';
-import { Container } from './styles';
+import Link from 'next/link';
+import { CardHeading, CardImage, CardLink, Container } from './styles';
 
-type HomeProps = {
+type CardProps = {
 	characters: characterData[];
 };
-export default function Home({ characters }: HomeProps) {
+export default function Card({ characters }: CardProps) {
 	return (
 		<>
 			{characters.map((character) => (
 				<Container key={character.id}>
-					<h2>{character.name}</h2>
+					<CardHeading>{character.name}</CardHeading>
 					<p>{character.species}</p>
-					<Image
+					<CardImage
 						src={character.image}
 						alt={`${character.name} photo`}
 						width={150}
 						height={140}
-					/>
+					></CardImage>
+					<CardLink href={`./character/${character.id}`} target="_blank">
+						Saiba mais
+					</CardLink>
 				</Container>
 			))}
 		</>

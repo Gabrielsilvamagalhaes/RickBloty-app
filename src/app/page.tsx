@@ -1,5 +1,5 @@
 import { getAllCharacters } from './lib/api/get/findAll';
-import HomePage from './ui/components/Home';
+import Card from './ui/components/Home';
 import MainContainer from './ui/components/Main';
 
 export default async function Home() {
@@ -8,7 +8,7 @@ export default async function Home() {
 	return (
 		<>
 			<MainContainer>
-				<HomePage characters={data} />
+				<Card characters={data} />
 			</MainContainer>
 		</>
 	);
