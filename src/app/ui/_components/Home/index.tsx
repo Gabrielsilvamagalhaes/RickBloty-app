@@ -1,4 +1,4 @@
-import { characterData } from '@/app/lib/types/character';
+import { characterData } from '@/app/_lib/types/character';
 import Image from 'next/image';
 import Link from 'next/link';
 import { CardHeading, CardImage, CardLink, Container } from './styles';

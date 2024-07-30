@@ -1,4 +1,5 @@
 'use client';
+import fundoImage from '@/../public/fundo.jpeg';
 import Link from 'next/link';
 import styled, { createGlobalStyle } from 'styled-components';
 import { primaryColor } from './Colors';
@@ -30,9 +31,8 @@ html {
 }
 
 body {
-  height: 100vh;
-  background-color: ${primaryColor};
+  min-height: 100vh;
+  background-color: #bfb8b8;
 }
-
 
 `;

@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
-import StyledComponentsRegistry from './lib/registry';
-import Header from './ui/components/Header';
+import Footer from './ui/_components/Footer';
+import Header from './ui/_components/Header';
+import StyledComponentsRegistry from './ui/_components/registry';
 import { poppins } from './ui/fonts/fonts';
-import { GlobalStyled } from './ui/styles/Globals';
 
 export const metadata: Metadata = {
 	title: 'Rick Bloty',
@@ -20,6 +20,7 @@ export default function RootLayout({
 				<StyledComponentsRegistry>
 					<Header />
 					{children}
+					<Footer />
 				</StyledComponentsRegistry>
 			</body>
 		</html>

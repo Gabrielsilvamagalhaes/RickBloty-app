@@ -3,7 +3,7 @@
 import { useServerInsertedHTML } from 'next/navigation';
 import React, { useState } from 'react';
 import { ServerStyleSheet, StyleSheetManager } from 'styled-components';
-import { GlobalStyled } from '../ui/styles/Globals';
+import { GlobalStyled } from '../styles/Globals';
 
 export default function StyledComponentsRegistry({
 	children,

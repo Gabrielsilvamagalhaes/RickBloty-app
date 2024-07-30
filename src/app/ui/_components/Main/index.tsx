@@ -1,5 +1,3 @@
-import { JSXElementConstructor, ReactNode } from 'react';
-import { LinkHeader } from '../../styles/Globals';
 import { Container } from './styles';
 
 type MainContainerProps = {

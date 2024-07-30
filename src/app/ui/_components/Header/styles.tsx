@@ -8,5 +8,5 @@ export const Container = styled.header`
   color: ${primaryColor};
   text-align: center;
   width: 100vw;
-  padding: 10px;
+  padding: 1rem;
 `;

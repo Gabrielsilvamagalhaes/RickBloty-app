@@ -1,13 +1,11 @@
 import { LinkHeader } from '../../styles/Globals';
 import { Container } from './styles';
 
-export default function Header() {
+export default function Footer() {
 	return (
 		<>
 			<Container>
-				<LinkHeader href={'./'} className="link">
-					Rick Bloty
-				</LinkHeader>
+				<h2>Feito por Gabriel Magalhães</h2>
 			</Container>
 		</>
 	);
