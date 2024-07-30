@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import StyledComponentsRegistry from './lib/registry';
+import Header from './ui/components/Header';
 import { poppins } from './ui/fonts/fonts';
 import { GlobalStyled } from './ui/styles/Globals';
 
@@ -17,8 +18,8 @@ export default function RootLayout({
 		<html lang="en">
 			<body className={poppins.className}>
 				<StyledComponentsRegistry>
+					<Header />
 					{children}
-					<GlobalStyled />
 				</StyledComponentsRegistry>
 			</body>
 		</html>

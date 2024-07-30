@@ -1,5 +1,21 @@
 'use client';
+import Link from 'next/link';
 import styled, { createGlobalStyle } from 'styled-components';
+import { primaryColor } from './Colors';
+
+export const LinkHeader = styled(Link)`
+  color: ${primaryColor};
+  text-decoration: none;
+  font-size: 2.8rem;
+  font-weight: 500;
+  letter-spacing: 0.5rem;
+  cursor: pointer;
+  transition: opacity 300ms ease-in-out;
+
+    &:hover {
+      opacity: .6;
+    }
+`;
 
 export const GlobalStyled = createGlobalStyle`
  * {
@@ -9,14 +25,14 @@ export const GlobalStyled = createGlobalStyle`
   outline: none;
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+html {
+  font-size: 62.5%;
 }
 
 body {
-  background-color: red;
+  height: 100vh;
+  background-color: ${primaryColor};
 }
+
 
 `;
