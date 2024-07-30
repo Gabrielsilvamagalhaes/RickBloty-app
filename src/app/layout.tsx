@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Footer from './ui/_components/Footer';
 import Header from './ui/_components/Header';
+import MainContainer from './ui/_components/Main';
 import StyledComponentsRegistry from './ui/_components/registry';
 import { poppins } from './ui/fonts/fonts';
 
@@ -19,7 +20,7 @@ export default function RootLayout({
 			<body className={poppins.className}>
 				<StyledComponentsRegistry>
 					<Header />
-					{children}
+					<MainContainer>{children}</MainContainer>
 					<Footer />
 				</StyledComponentsRegistry>
 			</body>

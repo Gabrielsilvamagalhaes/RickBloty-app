@@ -3,7 +3,7 @@
 import styled from 'styled-components';
 import { borderColor, primaryColor, secondaryColor } from '../../styles/Colors';
 
-export const Container = styled.header`
+export const Container = styled.footer`
   background-color: ${secondaryColor};
   color: ${primaryColor};
   text-align: center;

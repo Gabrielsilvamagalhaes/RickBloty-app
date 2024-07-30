@@ -1,12 +1,9 @@
-import { characterData } from '@/app/_lib/types/character';
-import Image from 'next/image';
-import Link from 'next/link';
+import { getAllCharacters } from '@/app/_lib/api/get/findAll';
 import { CardHeading, CardImage, CardLink, Container } from './styles';
 
-type CardProps = {
-	characters: characterData[];
-};
-export default function Card({ characters }: CardProps) {
+export default async function Card() {
+	const characters = await getAllCharacters();
+
 	return (
 		<>
 			{characters.map((character) => (

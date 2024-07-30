@@ -1,5 +1,4 @@
 'use client';
-import fundoImage from '@/../public/fundo.jpeg';
 import Link from 'next/link';
 import styled, { createGlobalStyle } from 'styled-components';
 import { primaryColor } from './Colors';

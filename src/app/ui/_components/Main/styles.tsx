@@ -9,4 +9,5 @@ export const Container = styled.main`
   grid-template-columns: repeat(auto-fill, minmax(280px, 300px));
   justify-content: space-evenly;
   gap: 2rem;
+  min-height: 100vh;
 `;
