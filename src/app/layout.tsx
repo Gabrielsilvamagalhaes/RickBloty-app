@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import Footer from './ui/_components/Footer';
 import Header from './ui/_components/Header';
 import MainContainer from './ui/_components/Main';
-import StyledComponentsRegistry from './ui/_components/registry';
 import { poppins } from './ui/fonts/fonts';
+import './globals.css';
 
 export const metadata: Metadata = {
 	title: 'Rick Bloty',
@@ -18,11 +18,9 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body className={poppins.className}>
-				<StyledComponentsRegistry>
-					<Header />
-					<MainContainer>{children}</MainContainer>
-					<Footer />
-				</StyledComponentsRegistry>
+				<Header />
+				<MainContainer>{children}</MainContainer>
+				<Footer />
 			</body>
 		</html>
 	);

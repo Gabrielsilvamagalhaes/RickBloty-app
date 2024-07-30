@@ -1,14 +1,17 @@
-import { LinkHeader } from '../../styles/Globals';
-import { Container } from './styles';
+import Link from 'next/link';
 
 export default function Header() {
 	return (
 		<>
-			<Container>
-				<LinkHeader href={'/'} className="link">
+			<header className="bg-secondary text-primary text-center w-100 p-10">
+				<Link
+					href={'/'}
+					className=" no-underline cursor-pointer hover:opacity-50 text-5xl transition-all duration-100 ease-in-out"
+				>
 					Rick Bloty
-				</LinkHeader>
-			</Container>
+				</Link>
+			</header>
 		</>
 	);
 }
+8;

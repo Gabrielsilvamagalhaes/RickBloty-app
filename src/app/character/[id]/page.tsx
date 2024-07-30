@@ -1,4 +1,5 @@
 import { fetchCharacterIds, getCharacter } from '@/app/_lib/api/get/findById';
+import Character from '@/app/ui/_components/Character';
 
 export async function generateStaticParams() {
 	const characterIds = await fetchCharacterIds();
@@ -13,6 +14,7 @@ export default async function CharacterPage({
 	return (
 		<>
 			<h2>{character.name}</h2>
+			<Character />
 		</>
 	);
 }

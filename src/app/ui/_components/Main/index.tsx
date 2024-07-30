@@ -1,5 +1,3 @@
-import { Container } from './styles';
-
 type MainContainerProps = {
 	children: React.ReactNode;
 };
@@ -7,7 +5,9 @@ type MainContainerProps = {
 export default function MainContainer({ children }: MainContainerProps) {
 	return (
 		<>
-			<Container>{children}</Container>
+			<main className="max-w-960 min-h-screen mt-8 mb-14 mx-auto">
+				{children}
+			</main>
 		</>
 	);
 }
