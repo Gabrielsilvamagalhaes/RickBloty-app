@@ -8,10 +8,9 @@ export default function Header() {
 					href={'/'}
 					className=" no-underline cursor-pointer hover:opacity-50 text-5xl transition-all duration-100 ease-in-out"
 				>
-					Rick Bloty
+					Rick <span className="text-border">Bloty</span>
 				</Link>
 			</header>
 		</>
 	);
 }
-8;

@@ -21,6 +21,10 @@ module.exports = {
 				100: '100vw',
 				960: '96rem',
 				divided: '50%',
+				sixty: '60%',
+			},
+			fontSize: {
+				convertRem: '62.5%',
 			},
 		},
 	},

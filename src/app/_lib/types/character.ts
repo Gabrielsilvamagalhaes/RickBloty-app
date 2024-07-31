@@ -6,4 +6,6 @@ export type characterData = {
 	gender: string;
 	image: string;
 	episode?: string[];
+	origin?: string[];
+	location?: string[];
 };

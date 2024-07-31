@@ -16,8 +16,11 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
-			<body className={poppins.className}>
+		<html lang="en" className="text-convertRem">
+			<body
+				className="min-h-screen  bg-gradient-to-r from-zinc-300 to-zinc-700"
+				style={poppins.style}
+			>
 				<Header />
 				<MainContainer>{children}</MainContainer>
 				<Footer />
