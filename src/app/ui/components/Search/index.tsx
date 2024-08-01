@@ -1,5 +1,6 @@
 'use client';
 
+import { LucideSearch, SearchCode } from 'lucide-react';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { useDebouncedCallback } from 'use-debounce';
 
@@ -28,7 +29,7 @@ export default function Search({ placeholder, className }: SearchProps) {
 
 	const handleSearch = (term: string) => {
 		const params = new URLSearchParams(searchParams);
-
+		params.set('page', '1');
 		if (term) {
 			params.set('query', term);
 		} else {
@@ -39,12 +40,21 @@ export default function Search({ placeholder, className }: SearchProps) {
 
 	return (
 		<>
-			<div>
-				<label htmlFor="search">Search</label>
+			<div className="flex justify-center items-baseline">
+				<label htmlFor="search" className="text-zinc-800">
+					<LucideSearch size={18} />
+				</label>
 				<input
 					type="text"
+					required
+					id="email"
 					placeholder={placeholder}
-					className={className}
+					className="w-1/2 mb-36 py-3 px-4 text-3xl bg-transparent  font-sans border border-x-0 border-t-0 border-b-zinc-500
+                        placeholder:text-3xl placeholder:font-light placeholder:text-zinc-700
+                        focus:border-x-0  focus:border-t-0 focus:outline-none focus:border-b-border
+												 hover:border-b-border hover:w-2/3 transition-[border-bottom-width, width, color] duration-500 ease-out
+												 active:transition-none
+                      "
 					onChange={(e) => handleSearch(e.target.value)}
 					defaultValue={searchParams.get('query')?.toString()}
 				/>

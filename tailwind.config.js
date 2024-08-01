@@ -10,6 +10,10 @@ module.exports = {
 	],
 	theme: {
 		extend: {
+			gridTemplateColumns: {
+				autofill: 'repeat(auto-fill, minmax(280px, 300px))',
+			},
+
 			colors: {
 				primary: '#FFF',
 				secondary: '#000',

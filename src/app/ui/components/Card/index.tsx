@@ -8,7 +8,7 @@ type CardProps = {
 };
 
 export default async function Card({ query, page }: CardProps) {
-	const characters = await getFilterCharacters(query);
+	const characters = await getFilterCharacters(query, page);
 
 	return (
 		<>
@@ -16,7 +16,7 @@ export default async function Card({ query, page }: CardProps) {
 				characters.map((character) => (
 					<section
 						key={character.id}
-						className="h-full box-border p-8 flex items-center flex-col rounded-3xl bg-card text-primary group"
+						className="h-full box-border p-8 flex items-center flex-col rounded-3xl bg-card text-primary group max-[400px]:w-96  max-[400px]:mx-auto"
 					>
 						<h2 className="text-3xl text-center font-light group-hover:text-border">
 							{character.name}

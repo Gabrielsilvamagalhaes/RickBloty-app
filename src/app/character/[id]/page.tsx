@@ -1,5 +1,4 @@
 import { fetchCharacterIds, getCharacter } from '@/app/_lib/api/get/findById';
-import Loading from '@/app/loading';
 import Character from '@/app/ui/_components/Character';
 
 export async function generateStaticParams() {

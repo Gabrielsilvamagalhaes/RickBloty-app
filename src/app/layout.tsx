@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
-import Footer from './ui/_components/Footer';
-import Header from './ui/_components/Header';
-import MainContainer from './ui/_components/Main';
+import Footer from './ui/components/Footer';
+import Header from './ui/components/Header';
+import MainContainer from './ui/components/Main';
 import { poppins } from './ui/fonts/fonts';
 import './globals.css';
 

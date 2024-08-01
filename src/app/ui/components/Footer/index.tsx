@@ -5,7 +5,7 @@ export default function Footer() {
 	return (
 		<>
 			<footer className="bg-secondary text-primary text-center w-100 p-7">
-				<div className="flex items-center justify-around">
+				<div className="flex items-center justify-around flex-wrap">
 					<Image
 						alt="Rick and morty log"
 						height={80}
