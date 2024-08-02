@@ -3,7 +3,10 @@ import Link from 'next/link';
 export default function Header() {
 	return (
 		<>
-			<header className="bg-secondary text-primary text-center w-100 p-10">
+			<header
+				className="bg-secondary text-primary text-center w-100 p-10"
+				id="top"
+			>
 				<Link
 					href={'/'}
 					className=" no-underline cursor-pointer hover:opacity-50 text-5xl transition-all duration-100 ease-in-out"

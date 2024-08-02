@@ -6,10 +6,9 @@ import { useDebouncedCallback } from 'use-debounce';
 
 type SearchProps = {
 	placeholder: string;
-	className: string;
 };
 
-export default function Search({ placeholder, className }: SearchProps) {
+export default function Search({ placeholder }: SearchProps) {
 	const searchParams = useSearchParams();
 	const pathname = usePathname();
 	const { replace } = useRouter();

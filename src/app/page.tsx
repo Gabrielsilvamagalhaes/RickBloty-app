@@ -23,7 +23,7 @@ export default function Home({
 
 	return (
 		<>
-			<Search placeholder="Search for characters..." className="mb-36" />
+			<Search placeholder="Search for characters..." />
 			<section className="grid grid-cols-autofill gap-8 justify-evenly  ">
 				{/* <Suspense key={query + currentPage} fallback={<Loading />}> */}
 				<Card query={query} page={currentPage} />

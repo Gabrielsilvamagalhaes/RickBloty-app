@@ -1,5 +1,7 @@
 import logoImage from '@/../public/logo.png';
+import { ChevronUpCircle } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Footer() {
 	return (
@@ -15,6 +17,11 @@ export default function Footer() {
 					<h2 className=" hover:text-border inline text-2xl">
 						Feito por Gabriel Magalhães
 					</h2>
+					<div>
+						<Link href={''} className="scroll-smooth">
+							<ChevronUpCircle className="hover:text-border" />
+						</Link>
+					</div>
 				</div>
 			</footer>
 		</>
